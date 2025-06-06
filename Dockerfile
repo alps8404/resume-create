@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # 4. Build Spring Boot JAR (skip tests for speed)
-RUN ./mvnw clean package -DskipTests
+RUN chmod +x mvnw && ./mvnw clean package -DskipTests
 
 # 5. Use a smaller image for running the app
 FROM eclipse-temurin:17-jre
