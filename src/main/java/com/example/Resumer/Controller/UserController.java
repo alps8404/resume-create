@@ -22,5 +22,4 @@ public class UserController {
         userService.saveUser(userDTO);
         return ResponseEntity.ok("Resume saved successfully");
     }
-    
 }
