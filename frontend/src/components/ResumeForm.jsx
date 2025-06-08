@@ -2,10 +2,14 @@
 import React from 'react';
 import axios from 'axios';
 
+
+
 function ResumeForm({ formData, setFormData }) {
   const updateField = (field, value) => {
     setFormData({ ...formData, [field]: value });
   };
+
+  
 
   const addEducation = () => {
     const newEducation = [...formData.education, { institution: '', degree: '', year: '' }];
