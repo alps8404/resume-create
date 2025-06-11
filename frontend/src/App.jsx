@@ -10,8 +10,9 @@ function App() {
     <Router>
       <Routes>
         {/* <meta name="google-adsense-account" content="ca-pub-1305960827881085"></meta> */}
-        <Route path="/" element={<Home />} />
+       
         {/* <Route path="/resume" element={<ResumeMaker />} /> */}
+         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<ErrorPage />} />
       </Routes>
     </Router>
