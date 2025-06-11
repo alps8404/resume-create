@@ -15,7 +15,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "if exist \"..\\src\\main\\resources\\static\" (rmdir /S /Q \"..\\src\\main\\resources\\static\") && xcopy /E /H /Y \"build\" \"..\\src\\main\\resources\\static\\\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
